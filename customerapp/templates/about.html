@@ -1,0 +1,227 @@
+<!doctype html>
+{% load static %}
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Digital Salons</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="site.webmanifest">
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+
+		<!-- CSS here -->
+            <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+            <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+
+            <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+
+            <link rel="stylesheet" href="{% static 'css/slicknav.css' %}">
+            <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+            <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+            <link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+            <link rel="stylesheet" href="{% static 'css/themify-icons.css' %}">
+            <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+            <link rel="stylesheet" href="{% static 'css/nice-select.css' %}">
+            <link rel="stylesheet" href="{% static 'css/style.css' %}">
+            <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   </head>
+
+   <body>
+       
+    <header>
+        <!-- Header Start -->
+   {% include 'header.html' %}
+        <!-- Header End -->
+    </header>
+
+    <main>
+
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <!-- Mobile Menu -->
+            <div class="single-slider slider-height2 d-flex align-items-center" data-background="{% static 'img/best.png' %}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="hero-cap text-center">
+                                <h2>About</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+
+        <!-- Team-profile Start -->
+            <div class="team-profile team-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-profile mb-30">
+                            <!-- Front -->
+                            <div class="single-profile-front">
+                                <div class="profile-img">
+                                    <img src="{% static 'img/massage.png' %}" alt="" height="236px" width="360px">
+                                </div>
+                                <div class="profile-caption">
+                                    <h4>Massages</h4>
+                                    <p> Massages on clients to improve circulation, promote relaxation, and relieve stress, pain, and injuries.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-profile mb-30">
+                            <!-- Front -->
+                            <div class="single-profile-front">
+                                <div class="profile-img">
+                                    <img src="{% static 'img/waxing.png' %}" height="236px" width="360px">
+                                </div>
+                                <div class="profile-caption">
+                                    <h4>Waxing</h4>
+                                    <p>Waxing is the process of hair removal from the root by using a covering of a sticky substance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-profile mb-30">
+                            <!-- Back -->
+                            <div class="single-profile-back-last">
+                                <h2>What we do for you</h2>
+                                <p>• Hair Design<br>
+
+                                    • Hair Color Design<br>
+
+                                    • Manicures<br>
+
+                                    • Pedicures<br>
+
+                                    • Makeup</p>
+<!--                                <a href="#">View profile »</a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team-profile End-->
+      
+
+    </main>
+   <footer>
+       <!-- Footer Start-->
+       <div class="footer-area footer-padding">
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6">
+                   <div class="single-footer-caption mb-50">
+                     <div class="single-footer-caption mb-30">
+                       <!--   &lt;!&ndash; logo &ndash;&gt;-->
+                         <div class="footer-logo">
+                             <a href="index.html"><img src="{% static 'img/logo/form-iocn.jpg' %}" alt=""></a>
+                         </div>
+                         <div class="footer-tittle">
+                             <div class="footer-pera">
+                                 <p>Saloon appointment bookings became digital now!</p>
+                            </div>
+                         </div>
+                       <!--  &lt;!&ndash; social &ndash;&gt;-->
+                         <div class="footer-social">
+                             <a href="#"><i class="fab fa-facebook-square"></i></a>
+                             <a href="#"><i class="fab fa-twitter-square"></i></a>
+                             <a href="#"><i class="fab fa-linkedin"></i></a>
+                             <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                         </div>
+                     </div>
+                   </div>
+                </div>
+                <div class="col-xl-2 col-lg-2 col-md-4 col-sm-5">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Company</h4>
+                            <ul>
+                                <li><a href="{% url 'index' %}">Home</a></li>
+                                <li><a href="{% url 'about' %}">About Us</a></li>
+
+                              <!--  <li><a href="#">Cases</a></li>-->
+                                <li><a href="{% url 'contact' %}">  Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-7">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Services</h4>
+                            <ul>
+                                <li><a href="#">Haircut</a></li>
+                                <li><a href="#">Makeup</a></li>
+                                <li><a href="#">Pedicure</a></li>
+                                <li><a href="#">Trimming</a></li>
+                             <!--   <li><a href="#">Apartment Cleaning</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                    <div class="single-footer-caption mb-50">
+                        <div class="footer-tittle">
+                            <h4>Get in Touch</h4>
+                            <ul>
+                             <li><a href="#">9876543210</a></li>
+                             <li><a href="#"> Demomail@gmail.com</a></li>
+                             <li><a href="#">JNTUH, Hyd</a></li>
+                         </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       <!-- footer-bottom aera -->
+{% include 'footer.html' %}
+   </footer>
+
+	<!-- JS here -->
+
+		<!-- All JS Custom Plugins Link Here here -->
+        <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+		<!-- Jquery, Popper, Bootstrap -->
+		<script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+	    <!-- Jquery Mobile Menu -->
+        <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+
+		<!-- Jquery Slick , Owl-Carousel Plugins -->
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/slick.min.js' %}"></script>
+        <!-- Date Picker -->
+        <script src="{% static 'js/gijgo.min.js' %}"></script>
+		<!-- One Page, Animated-HeadLin -->
+        <script src="{% static 'js/wow.min.js' %}"></script>
+		<script src="{% static 'js/animated.headline.js' %}"></script>
+        <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+
+		<!-- Scrollup, nice-select, sticky -->
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'js/jquery.nice-select.min.js' %}"></script>
+		<script src="{% static 'js/jquery.sticky.js' %}"></script>
+        
+        <!-- contact js -->
+        <script src="{% static 'js/contact.js' %}"></script>
+        <script src="{% static 'js/jquery.form.js' %}"></script>
+        <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        
+		<!-- Jquery Plugins, main Jquery -->	
+        <script src="{% static 'js/plugins.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+        
+    </body>
+</html>
